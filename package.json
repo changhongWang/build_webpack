@@ -7,6 +7,7 @@
     "dev": "webpack --config ./lib/webpack.dev.js",
     "prod": "webpack --config ./lib/webpack.prod.js",
     "test": "echo \"Error: no test specified\" && exit 1",
+    "testbuild": "node ./test/testBuild.js",
     "eslint": "eslint ./lib --fix"
   },
   "keywords": [],
@@ -17,7 +18,10 @@
     "eslint": "^7.32.0",
     "eslint-config-airbnb-base": "^14.2.1",
     "eslint-plugin-import": "^2.23.4",
+    "glob-all": "^3.2.1",
     "ignore-loader": "^0.1.2",
+    "mocha": "^9.0.3",
+    "rimraf": "^3.0.2",
     "webpack-cli": "^4.7.2"
   },
   "dependencies": {

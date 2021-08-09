@@ -1,0 +1,21 @@
+<!--
+ * @Description: 
+ * @Author: changhong.wang
+ * @Date: 2021-07-13 22:11:43
+ * @LastEditors: changhong.wang
+ * @LastEditTime: 2021-07-14 01:01:10
+-->
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Test Webpack</title>
+    <%= require('!!raw-loader!./meta.html') %>
+    <script>
+      <%= require('!!raw-loader!babel-loader!./node_modules/lib-flexible/flexible.js') %>
+    </script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <div class="test">555</div>
+  </body>
+</html>

@@ -6,8 +6,10 @@ describe("webpack.base.js test case", () => {
   console.log(baseConfig);
   it("entry", () => {
     assert.strictEqual(
-      baseConfig.entry,
-      "/Users/wangchanghong/StudyProjects/build_webpack/test/smoke/template/src/index"
+      baseConfig.entry.indexOf(
+        "/build_webpack/test/smoke/template/src/index"
+      ) !== -1,
+      true
     );
     console.log("entry SUCC");
   });

@@ -1,6 +1,6 @@
 {
-  "name": "build_webpack",
-  "version": "1.0.0",
+  "name": "@chwangstudy/build_webpack",
+  "version": "0.0.1",
   "description": "",
   "main": "index.js",
   "scripts": {
